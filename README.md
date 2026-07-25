@@ -5,6 +5,7 @@ A minimal command-line chatbot built with Python and the OpenAI API. It keeps tr
 ## Features
 
 - Simple CLI chat loop
+- Real-time streaming responses — replies print token-by-token as they're generated
 - Maintains conversation context across turns
 - Configurable system prompt (currently set to a sassy, fed-up assistant persona)
 - Environment-based API key management via `.env`
@@ -72,7 +73,6 @@ Simple-OpenAI-chatbot/
 
 - No error handling for API/network failures
 - No conversation length limit (long chats can grow the context indefinitely)
-- No streaming responses — replies are printed only after full generation
 
 ## License
 
