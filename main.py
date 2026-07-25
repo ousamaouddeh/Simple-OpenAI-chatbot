@@ -21,7 +21,7 @@ def chat(user_input):
         #max_tokens=MAX_TOKENS
     )
     reply = response.choices[0].message.content
-    messages.append(({'role':'assistant', 'content':'reply'}))
+    messages.append(({'role':'assistant', 'content': reply}))
 
     return reply
 while True:
